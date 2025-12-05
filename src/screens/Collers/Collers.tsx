@@ -309,7 +309,7 @@ export const Collers = (): JSX.Element => {
                         </div>
 
                         <div className="flex-1 relative w-full max-w-md lg:max-w-lg">
-                            <div className="absolute top-24 left-24 right-16 bottom-16 bg-amber-400 rounded-3xl" />
+                            <div className="absolute top-16 left-12 right-8 bottom-8 sm:top-24 sm:left-24 sm:right-16 sm:bottom-16 bg-amber-400 rounded-3xl" />
                             <img
                                 className="relative z-10 w-full h-auto"
                                 alt="Collectible Sneakers"
@@ -427,7 +427,7 @@ export const Collers = (): JSX.Element => {
                                             src="/assets/runners.jpg"
                                         />
                                         <img
-                                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 cursor-pointer hover:scale-110 transition-transform"
+                                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 sm:w-24 sm:h-24 cursor-pointer hover:scale-110 transition-transform"
                                             alt="Play"
                                             src="/assets/play.png"
                                         />
@@ -592,7 +592,7 @@ export const Collers = (): JSX.Element => {
                                             src="/assets/runners.jpg"
                                         />
                                         <img
-                                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 cursor-pointer hover:scale-110 transition-transform"
+                                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 sm:w-16 sm:h-16 cursor-pointer hover:scale-110 transition-transform"
                                             alt="Play"
                                             src="/assets/play.png"
                                         />
@@ -600,7 +600,7 @@ export const Collers = (): JSX.Element => {
                                 </div>
 
                                 {/* Foreground browser window */}
-                                <div className="relative z-10 mt-16 ml-16 bg-white rounded-2xl border-4 border-gray-200 shadow-2xl overflow-hidden">
+                                <div className="relative z-10 mt-8 ml-4 lg:mt-16 lg:ml-16 bg-white rounded-2xl border-4 border-gray-200 shadow-2xl overflow-hidden">
                                     <div className="h-8 bg-gray-100 flex items-center gap-2 px-4">
                                         <div className="w-3 h-3 rounded-full bg-red-400" />
                                         <div className="w-3 h-3 rounded-full bg-yellow-400" />
@@ -614,7 +614,7 @@ export const Collers = (): JSX.Element => {
                                 </div>
 
                                 {/* Overlay image */}
-                                <div className="absolute bottom-20 -right-10 z-20 w-72 lg:w-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                                <div className="hidden sm:block absolute bottom-20 -right-10 z-20 w-48 lg:w-72 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                                     <img
                                         className="w-full h-auto"
                                         alt="Sneaker kick"
@@ -627,7 +627,7 @@ export const Collers = (): JSX.Element => {
                 </section>
 
                 {/* Stats Section */}
-                <section className="bg-amber-900 py-24 lg:py-80 relative overflow-hidden">
+                <section className="bg-amber-900 py-16 sm:py-24 lg:py-80 relative overflow-hidden">
                     <div
                         className="absolute inset-0 opacity-100 bg-cover bg-center"
                         style={{
@@ -635,16 +635,16 @@ export const Collers = (): JSX.Element => {
                                 "url('/assets/worldmap.png')",
                         }}
                     />
-                    {/* Ellipses overlay */}
+                    {/* Ellipses overlay - hidden on mobile */}
                     <img
-                        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1]"
+                        className="hidden lg:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1]"
                         style={{ width: '965px', height: '600px' }}
                         src="/assets/Ellipses.png"
                         alt=""
                     />
 
-                    {/* Shoe card overlay */}
-                    <div className="absolute top-[10%] left-[5%] lg:left-[10%] z-[5]">
+                    {/* Shoe card overlay - hidden on small mobile */}
+                    <div className="hidden sm:block absolute top-[10%] left-[5%] lg:left-[10%] z-[5]">
                         <div className="bg-white rounded-2xl p-2 shadow-2xl overflow-hidden w-64 lg:w-72">
                             <img
                                 className="w-full h-56 object-cover rounded-xl"
@@ -777,19 +777,17 @@ export const Collers = (): JSX.Element => {
 
                     </div>
                     <img
-                        className="absolute bottom-12 right-0 w-26 lg:w-26 h-24 z-0"
+                        className="hidden sm:block absolute bottom-12 right-0 w-20 lg:w-26 h-20 lg:h-24 z-0"
                         src="/assets/rect3.png"
                         alt=""
                     />
-                    {/* rect1 - pink/magenta, above rect3 */}
                     <img
-                        className="absolute -top-0 right-8 w-32 lg:w-42 h-auto z-[1]"
+                        className="hidden sm:block absolute -top-0 right-8 w-24 lg:w-42 h-auto z-[1]"
                         src="/assets/rect1.png"
                         alt=""
                     />
-                    {/* rect2 - purple, in front of both */}
                     <img
-                        className="absolute top-8 right-0 w-24 lg:w-24 h-36 z-[2]"
+                        className="hidden sm:block absolute top-8 right-0 w-20 lg:w-24 h-28 lg:h-36 z-[2]"
                         src="/assets/rect2.png"
                         alt=""
                     />
